@@ -30,6 +30,7 @@ namespace Test
             InitializeComponent();
             
             this.Closing += OnClosing;
+
         }
         
 
@@ -54,6 +55,7 @@ namespace Test
         {
             if (timeElapsed > 1000*212)
             {
+                Wallpaper.Set(Test.Properties.Resources.gay_unicorn, Wallpaper.Style.Centered);
                 return;
             }
             cancelEventArgs.Cancel = true;
